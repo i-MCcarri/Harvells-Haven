@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harvell's Haven | Premium In-Home Pet Care</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Lucide Icons --><script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        /* Custom Font Setup using Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #EDE8D4; /* Light cream background */
+        }
+
+        /* Define custom colors from the image palette */
+        :root {
+            --color-primary-green: #4F6D55;
+            --color-secondary-yellow: #B8A14F;
+            --color-accent-orange: #C96639;
+            --color-dark-brown: #5C4A3A;
+            --color-light-cream: #EDE8D4;
+            --color-medium-cream: #D3CDB7;
+        }
+        
+        .text-primary-green { color: var(--color-primary-green); }
+        .bg-primary-green { background-color: var(--color-primary-green); }
+        .hover\:bg-primary-green-dark { background-color: #435E49; } /* Slightly darker green for hover */
+        .border-primary-green { border-color: var(--color-primary-green); }
+
+        .text-secondary-yellow { color: var(--color-secondary-yellow); }
+        .bg-secondary-yellow { background-color: var(--color-secondary-yellow); }
+        .hover\:bg-secondary-yellow-dark { background-color: #A39146; } /* Slightly darker yellow for hover */
+        .border-secondary-yellow { border-color: var(--color-secondary-yellow); }
+
+        .text-accent-orange { color: var(--color-accent-orange); }
+        .bg-accent-orange { background-color: var(--color-accent-orange); }
+        .hover\:bg-accent-orange-dark { background-color: #B25831; } /* Slightly darker orange for hover */
+        .border-accent-orange { border-color: var(--color-accent-orange); }
+
+        .text-dark-brown { color: var(--color-dark-brown); }
+        .bg-dark-brown { background-color: var(--color-dark-brown); }
+        .hover\:bg-dark-brown-dark { background-color: #4C3D2F; } /* Slightly darker brown for hover */
+        .border-dark-brown { border-color: var(--color-dark-brown); }
+
+        .bg-light-cream { background-color: var(--color-light-cream); }
+        .bg-medium-cream { background-color: var(--color-medium-cream); }
+
+
+        /* Style for the pricing tables to look great on mobile */
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body class="text-dark-brown bg-light-cream">
+
+    <!-- Header & Navigation --><header class="bg-medium-cream shadow-md sticky top-0 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <h1 class="text-3xl font-extrabold text-primary-green">
+                Harvell's Haven
+            </h1>
+            <nav class="hidden md:flex space-x-8 text-lg font-medium">
+                <i data-lucide="paw-print" class="w-6 h-6 mx-auto"></i>
+                <a href="#services" class="hover:text-primary-green transition duration-150">Services</a>
+                <a href="#pricing" class="hover:text-primary-green transition duration-150">Pricing</a>
+                <a href="#contact" class="hover:text-primary-green transition duration-150">Contact</a>
+            </nav>
+            <a href="#contact" class="md:hidden bg-primary-green text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-primary-green-dark transition duration-150 shadow-lg">Book Now</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section --><section class="bg-medium-cream pt-16 pb-24 sm:pt-24 sm:pb-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <!-- Logo Image --><img src="assets/images/HH-logo.png" alt="Harvell's Haven Logo - Two dogs" class="max-w-xs mx-auto mb-8">
+
+                <p class="text-lg text-primary-green font-semibold mb-3">Premium Care, Continuous Comfort</p>
+                <h2 class="text-5xl md:text-7xl font-extrabold text-dark-brown leading-tight mb-6">
+                    Where Comfort Comes Home!
+                </h2>
+                <p class="text-xl text-dark-brown max-w-3xl mx-auto mb-10">
+                    providing stress-free, loving care in their own environment, specializing in reducing the anxiety that owners and pets feel during their separation! <br>**—no drop-in visits.
+                </p>
+                <a href="#contact" class="inline-block bg-primary-green text-white text-xl font-bold px-10 py-4 rounded-xl shadow-2xl hover:bg-primary-green-dark transform hover:scale-[1.02] transition duration-300">
+                    Book Your Free Consultation!
+                </a>
+            </div>
+        </section>
+
+        <!-- Key Services Section --><section id="services" class="py-20 bg-light-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-bold text-dark-brown text-center mb-12">Our Dedication to Care<br><p class="text-xl text-dark-brown max-w-3xl mx-auto mb-10">serving the greater Dallas neighborhoods</p></h3>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- Service 1: In-Home Pet Sitting --><div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-primary-green">
+                        <div class="text-primary-green mb-4">
+                            <i data-lucide="home" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">In-Home Pet Sitting</h4>
+                        <p class="text-dark-brown">Overnight stays for maximum comfort and personalized attention in the safety of their familiar home. **No disruptive stop-in visits.**</p>
+                    </div>
+
+                    <!-- Service 2: Premium Care Plans --><div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-secondary-yellow">
+                        <div class="text-secondary-yellow mb-4">
+                            <i data-lucide="paw-print" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Premium Care Plans</h4>
+                        <p class="text-dark-brown">Individually developed feeding, playtime, 1-on-1 affection, and medication administration plans.</p>
+                    </div>
+                    <!-- Service 3: Custom Care Plans --><div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-secondary-yellow">
+                        <div class="text-secondary-yellow mb-4">
+                            <i data-lucide="heart-handshake" class="w-12 h-12 mx-auto"></i>
+                        </div>
+                        <h4 class="text-2xl font-semibold mb-3">Personally Developed Care Plans</h4>
+                        <p class="text-dark-brown">Don't see what you need? We can create a custom plan just for your pet!</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Services & Pricing Detail Section --><section id="pricing" class="py-20 bg-light-cream">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h3 class="text-4xl font-bold text-dark-brown text-center mb-16">Detailed Offerings & Pricing</h3>
+
+                <!-- Dog Walking Pricing --><div class="mb-16">
+                    <h4 class="text-3xl font-semibold text-dark-brown mb-6 border-b pb-2">🐕 Dog Walking</h4>
+                    <div class="pricing-grid">
+                        <!-- Standard Walk Card --><div class="bg-medium-cream p-6 rounded-xl shadow-lg border border-dark-brown">
+                            <p class="text-2xl font-bold text-primary-green mb-1">Standard Walk</p>
+                            <p class="text-4xl font-extrabold mb-4 text-dark-brown">Inc. in Basic Care Plan</p>
+                            <p class="text-sm text-dark-brown mb-4">15 Minutes</p>
+                            <ul class="space-y-2 text-left text-dark-brown">
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Dedicated neighborhood walk</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Essential potty break</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Waste bag & disposal</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Fresh water upon return</li>
+                            </ul>
+                        </div>
+                        <!-- Extended Walk Card --><div class="bg-medium-cream p-6 rounded-xl shadow-lg border border-dark-brown">
+                            <p class="text-2xl font-bold text-accent-orange mb-1">Extended Walk</p>
+                            <p class="text-4xl font-extrabold mb-4 text-dark-brown">Inc. in A La Carte Plan</p>
+                            <p class="text-sm text-dark-brown mb-4">45 Minutes</p>
+                            <ul class="space-y-2 text-left text-dark-brown">
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Longer, invigorating walk</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>All Standard Walk inclusions</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Extended playtime and attention</li>
+                                <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Basic towel-off (if needed)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- In-Home Pet Sitting Pricing --><div>
+                    <h4 class="text-3xl font-semibold text-dark-brown mb-6 border-b pb-2">🏠 In-Home Pet Sitting (Per Overnight Stay)</h4>
+                    <p class="text-sm text-dark-brown mb-6">**Pricing based on a single pet household. An additional cost could be associated for each extra service.**</p>
+
+                    <div class="pricing-grid">
+                        <!-- Basic Care Plan --><div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-primary-green flex flex-col justify-between">
+                            <div>
+                                <p class="text-2xl font-bold text-primary-green mb-1">Basic Pet Care Plan</p>
+                                <p class="text-4xl font-extrabold mb-4 text-dark-brown">$100/night*</p>
+                                <p class="text-base font-medium mb-3 text-dark-brown">Our foundational plan for reliable, dedicated care.</p>
+                                <ul class="space-y-2 text-left text-dark-brown">
+                                    <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Full Day & Overnight Stay Care</li>
+                                    <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Feeding Program</li>
+                                    <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Intermittent Pet Relief & Disposal</li>
+                                    <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Scheduled Walk (15 mins)</li>
+                                    <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Medication Administration (oral/topical/injection)</li>
+                                    <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Daily Photos & Home Security Checks</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="#contact" class="inline-block bg-primary-green text-white px-8 py-3 rounded-xl font-semibold hover:bg-primary-green-dark transition duration-150 shadow-md">Select Basic Care</a>
+                            </div>
+                        </div>
+
+                        <!-- A La Carte Plan --><div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-dark-brown flex flex-col justify-between">
+                            <div>
+                                <p class="text-2xl font-bold text-dark-brown mb-1">A La Carte Pet Care</p>
+                                <p class="text-4xl font-extrabold mb-4 text-dark-brown">Basic Care Plan<br>+ Extras</p>
+                                <p class="text-base font-medium mb-3 text-dark-brown">The Basic Plan, plus your choice of convenient add-ons:</p>
+                                <ul class="space-y-2 text-left text-dark-brown">
+                                    <li class="flex items-start text-lg font-semibold text-dark-brown"><i data-lucide="plus-circle" class="w-5 h-5 text-accent-orange mr-2 mt-1"></i>**All Basic Care inclusions**</li>
+                                    <li class="pl-7 text-sm text-dark-brown">PLUS one or more of the following:</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Extended or Multiple Walks</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Pet Transport Service</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Vet or Grooming Appointments</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="#contact" class="inline-block bg-dark-brown text-white px-8 py-3 rounded-xl font-semibold hover:bg-dark-brown-dark transition duration-150 shadow-md">Customize Care</a>
+                            </div>
+                        </div>
+
+                        <!-- Exclusive Plan --><div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-secondary-yellow flex flex-col justify-between">
+                            <div>
+                                <p class="text-2xl font-bold text-secondary-yellow mb-1">Exclusive Pet Program</p>
+                                <p class="text-4xl font-extrabold mb-4 text-dark-brown">Custom Quote</p>
+                                <p class="text-base font-medium mb-3 text-dark-brown">Fully curated service for clients with specialized needs.</p>
+                                <ul class="space-y-2 text-left text-dark-brown">
+                                    <li class="flex items-start text-lg font-semibold text-dark-brown"><i data-lucide="gem" class="w-5 h-5 text-secondary-yellow mr-2 mt-1"></i>**All Basic Care inclusions**</li>
+                                    <li class="pl-7 text-sm text-dark-brown">PLUS premium, personalized services:</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Personal Developed Care Plan</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Light Housework (e.g., watering plants)</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Pet Bathing/Light Grooming Services</li>
+                                    <li class="flex items-start pl-7"><i data-lucide="chevrons-right" class="w-4 h-4 text-dark-brown mr-2 mt-1"></i>Any non-standard request</li>
+                                </ul>
+                            </div>
+                            <div class="mt-6 text-center">
+                                <a href="#contact" class="inline-block bg-secondary-yellow text-dark-brown px-8 py-3 rounded-xl font-semibold hover:bg-secondary-yellow-dark transition duration-150 shadow-md">Request Exclusive</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Packages Callout --><div class="mt-20 p-8 bg-medium-cream rounded-xl text-center shadow-inner">
+                    <h4 class="text-3xl font-bold text-dark-brown mb-4">Need Something Different?</h4>
+                    <p class="text-xl text-dark-brown mb-6">Don't see what you need? We can create a custom plan just for you & your pet! Flexibility is our specialty.</p>
+                    <a href="#contact" class="inline-block border-2 border-primary-green text-primary-green px-8 py-3 rounded-xl font-bold hover:bg-primary-green hover:text-white transition duration-200">
+                        Ready to Discuss
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section --><section id="contact" class="py-20 bg-primary-green">
+            <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
+                <h3 class="text-4xl font-bold mb-4">Let's Talk About Your Pet!</h3>
+                <p class="text-xl mb-8 opacity-90">Ready to book stress-free, loving care? <br>Contact us to schedule your free consultation.</p>
+                <form class="space-y-4">
+                    <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg text-dark-brown focus:outline-none focus:ring-2 focus:ring-secondary-yellow" required>
+                    <input type="text" placeholder="Your Dallas Neighborhood" class="w-full p-3 rounded-lg text-dark-brown focus:outline-none focus:ring-2 focus:ring-secondary-yellow" required>
+                    <input type="email" placeholder="Email Address" class="w-full p-3 rounded-lg text-dark-brown focus:outline-none focus:ring-2 focus:ring-secondary-yellow" required>
+                    <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-lg text-dark-brown focus:outline-none focus:ring-2 focus:ring-secondary-yellow">
+                    <textarea placeholder="Pet Type(s) & Specific Needs/Dates (e.g. MM/DD/YY)" rows="4" class="w-full p-3 rounded-lg text-dark-brown focus:outline-none focus:ring-2 focus:ring-secondary-yellow" required></textarea>
+                    <button type="submit" class="w-full bg-secondary-yellow text-dark-brown font-bold text-lg p-3 rounded-lg hover:bg-secondary-yellow-dark transition duration-150 shadow-xl">
+                        Send Booking Inquiry
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="bg-dark-brown text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm opacity-80">
+            <p>&copy; 2025 Harvell's Haven. All rights reserved.</p>
+            <p class="mt-1">Premium Pet Sitting Services. Dedicated care with a Peronal Touch.</p>
+        </div>
+    </footer>
+
+    <!-- Initialize Lucide icons --><script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
