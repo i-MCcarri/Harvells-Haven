@@ -237,22 +237,23 @@
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                         <div>
                                             <label class="block text-sm font-bold mb-2">Full Name</label>
-                                            <input type="text" name="name" id="name" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
+                                            <input type="text" name="name" id="name" placeholder="Groot Harvell" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
                                         </div>
                                         <div>
                                             <label class="block text-sm font-bold mb-2">Email Address</label>
-                                            <input type="email" name="email" id="email" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
+                                            <input type="email" name="email" id="email" placeholder="name@service.com" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
                                         </div>
                                     </div>
                                     
                                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
                                         <div>
                                             <label class="block text-sm font-bold mb-2">Phone Number</label>
-                                            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
+                                            <input type="tel" name="phone" id="phone" pattern="^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$" placeholder="123-456-7890" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
                                         </div>
+
                                         <div>
                                             <label class="block text-sm font-bold mb-2">Dallas Neighborhood</label>
-                                            <input type="text" name="hood" id="hood" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
+                                            <input type="text" name="hood" id="hood" placeholder="Oak Lawn" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
                                         </div>
                                     </div>
                                     
@@ -268,7 +269,7 @@
 
                                     <div class="mb-8">
                                         <label class="block text-sm font-bold mb-2">Your Message</label>
-                                        <textarea name="message" id="message" rows="4" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green" placeholder="Tell us about your pets and dates needed..."></textarea>
+                                        <textarea name="message" id="message" rows="4" placeholder="Greetings, my name is Molly Harvell and I have 2 male dogs. Groot is working Lab max & Cash is a pug named after Johnny Cash!" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green" placeholder="Tell us about your pets and dates needed..."></textarea>
                                     </div>
                                     
                                     <button type="submit" id="submitBtn" class="w-full bg-[#C96639] text-white font-bold py-4 rounded-xl shadow-lg hover:brightness-110 transition flex justify-center items-center gap-3">
