@@ -24,41 +24,112 @@
             --color-medium-cream: #D3CDB7;
         }
         
-        .text-primary-green { color: var(--color-primary-green); }
-        .bg-primary-green { background-color: var(--color-primary-green); }
-        .hover\:bg-primary-green-dark { background-color: #435E49; } /* Slightly darker green for hover */
-        .border-primary-green { border-color: var(--color-primary-green); }
+            .text-primary-green { color: var(--color-primary-green); }
+            .bg-primary-green { background-color: var(--color-primary-green); }
+            .hover\:bg-primary-green-dark { background-color: #435E49; } /* Slightly darker green for hover */
+            .border-primary-green { border-color: var(--color-primary-green); }
 
-        .text-secondary-yellow { color: var(--color-secondary-yellow); }
-        .bg-secondary-yellow { background-color: var(--color-secondary-yellow); }
-        .hover\:bg-secondary-yellow-dark { background-color: #A39146; } /* Slightly darker yellow for hover */
-        .border-secondary-yellow { border-color: var(--color-secondary-yellow); }
+            .text-secondary-yellow { color: var(--color-secondary-yellow); }
+            .bg-secondary-yellow { background-color: var(--color-secondary-yellow); }
+            .hover\:bg-secondary-yellow-dark { background-color: #A39146; } /* Slightly darker yellow for hover */
+            .border-secondary-yellow { border-color: var(--color-secondary-yellow); }
 
-        .text-accent-orange { color: var(--color-accent-orange); }
-        .bg-accent-orange { background-color: var(--color-accent-orange); }
-        .hover\:bg-accent-orange-dark { background-color: #B25831; } /* Slightly darker orange for hover */
-        .border-accent-orange { border-color: var(--color-accent-orange); }
+            .text-accent-orange { color: var(--color-accent-orange); }
+            .bg-accent-orange { background-color: var(--color-accent-orange); }
+            .hover\:bg-accent-orange-dark { background-color: #B25831; } /* Slightly darker orange for hover */
+            .border-accent-orange { border-color: var(--color-accent-orange); }
 
-        .text-dark-brown { color: var(--color-dark-brown); }
-        .bg-dark-brown { background-color: var(--color-dark-brown); }
-        .hover\:bg-dark-brown-dark { background-color: #4C3D2F; } /* Slightly darker brown for hover */
-        .border-dark-brown { border-color: var(--color-dark-brown); }
+            .text-dark-brown { color: var(--color-dark-brown); }
+            .bg-dark-brown { background-color: var(--color-dark-brown); }
+            .hover\:bg-dark-brown-dark { background-color: #4C3D2F; } /* Slightly darker brown for hover */
+            .border-dark-brown { border-color: var(--color-dark-brown); }
 
-        .bg-light-cream { background-color: var(--color-light-cream); }
-        .bg-medium-cream { background-color: var(--color-medium-cream); }
+            .bg-light-cream { background-color: var(--color-light-cream); }
+            .bg-medium-cream { background-color: var(--color-medium-cream); }
 
 
         /* Style for the pricing tables to look great on mobile */
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem;
-        }
+            .pricing-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1.5rem;
+            }
+        
+        /* Professional Styling for Harvell's Haven Service Menu */
+            .hh-menu-container {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background-color: #C9B675; /* Light cream background */
+                color: #2d4739; /* Deep forest green text */
+                margin: 20px auto;
+                padding: 0px;
+                box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            }
+
+            .hh-program-schedule {
+                text-align: center;
+                border-bottom: 2px solid #2d4739;
+                padding-bottom: 10px;
+                margin-bottom: 30px;
+            }
+
+            .hh-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+            }
+            
+            .hh-program-schedule h1 {
+                margin: 0;
+                font-size: 2.5em;
+                letter-spacing: 1px;
+            }
+        
+            .hh-section-title {
+                font-size: 1.4em;
+                font-weight: bold;
+                margin-bottom: 20px;
+                color: #8c6a42; /* Soft bronze/brown for headers */
+                text-transform: uppercase;
+            }
+
+            .hh-item {
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+
+            .hh-item-label {
+                font-weight: 600;
+                flex: 1;
+            }
+
+            .hh-item-price {
+                font-weight: bold;
+                padding-left: 10px;
+            }
+
+            .hh-description {
+                font-size: 0.9em;
+                font-style: italic;
+                margin-top: -12px;
+                margin-bottom: 15px;
+                color: #555;
+            }
+
+            .hh-footer {
+                margin-top: 40px;
+                text-align: center;
+                font-size: 0.9em;
+                border-top: 1px solid #5C4A3A;
+                padding-top: 10px;
+            }
     </style>
 </head>
 <body class="text-dark-brown bg-light-cream">
 
-    <!-- Header & Navigation --><header class="bg-medium-cream shadow-md sticky top-0 z-10">
+    <!-- Header & Navigation -->
+    <header class="bg-medium-cream shadow-md sticky top-0 z-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-extrabold text-primary-green">
                 Harvell's Haven
@@ -67,6 +138,7 @@
                 <i data-lucide="paw-print" class="w-6 h-6 mx-auto"></i>
                 <a href="#services" class="hover:text-primary-green transition duration-150">Services</a>
                 <a href="#pricing" class="hover:text-primary-green transition duration-150">Pricing</a>
+                <a href="#faqs" class="hover:text-primary-green transition duration-150">FAQs</a>
                 <a href="#contact" class="hover:text-primary-green transition duration-150">Contact</a>
             </nav>
             <a href="#contact" class="md:hidden bg-primary-green text-white px-4 py-2 rounded-full text-sm font-semibold hover:bg-primary-green-dark transition duration-150 shadow-lg">Book Now</a>
@@ -74,7 +146,8 @@
     </header>
 
     <main>
-        <!-- Hero Section --><section class="bg-medium-cream pt-16 pb-24 sm:pt-24 sm:pb-32">
+        <!-- Hero Section -->
+        <section class="bg-medium-cream pt-16 pb-24 sm:pt-24 sm:pb-32">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <!-- Logo Image --><img src="assets/images/HH-logo.png" alt="Harvell's Haven Logo - Two dogs" class="max-w-xs mx-auto mb-8">
 
@@ -91,13 +164,18 @@
             </div>
         </section>
 
-        <!-- Key Services Section --><section id="services" class="py-20 bg-light-cream">
+        <!-- Key Services Section -->
+        <section id="services" class="py-20 bg-light-cream">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h3 class="text-4xl font-bold text-dark-brown text-center mb-12">Our Dedication to Care<br><p class="text-xl text-dark-brown max-w-3xl mx-auto mb-10">serving the greater Dallas neighborhoods</p></h3>
+                <h3 class="text-4xl font-bold text-dark-brown text-center mb-12">Our Dedication to Care<br>
+                    <p class="text-xl text-dark-brown max-w-3xl mx-auto mb-10">serving the greater Dallas neighborhoods
+                    </p>
+                </h3>
                 
                 <div class="grid md:grid-cols-3 gap-8">
 
-                    <!-- Service 1: In-Home Pet Sitting --><div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-primary-green">
+                    <!-- Service 1: In-Home Pet Sitting -->
+                    <div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-primary-green">
                         <div class="text-primary-green mb-4">
                             <i data-lucide="home" class="w-12 h-12 mx-auto"></i>
                         </div>
@@ -105,33 +183,37 @@
                         <p class="text-dark-brown">Overnight stays for maximum comfort and personalized attention in the safety of their familiar home. **No disruptive stop-in visits.**</p>
                     </div>
 
-                    <!-- Service 2: Premium Care Plans --><div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-secondary-yellow">
+                    <!-- Service 2: Premium Care Plans -->
+                    <div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-secondary-yellow">
                         <div class="text-secondary-yellow mb-4">
                             <i data-lucide="paw-print" class="w-12 h-12 mx-auto"></i>
                         </div>
                         <h4 class="text-2xl font-semibold mb-3">Premium Care Plans</h4>
                         <p class="text-dark-brown">Individually developed feeding, playtime, 1-on-1 affection, and medication administration plans.</p>
                     </div>
-                    <!-- Service 3: Custom Care Plans --><div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-secondary-yellow">
-                        <div class="text-secondary-yellow mb-4">
+                    <!-- Service 3: Custom Care Plans -->
+                    <div class="bg-medium-cream p-8 rounded-xl shadow-xl text-center border-t-4 border-accent-orange">
+                        <div class="text-accent-orange mb-4">
                             <i data-lucide="heart-handshake" class="w-12 h-12 mx-auto"></i>
                         </div>
                         <h4 class="text-2xl font-semibold mb-3">Personally Developed Care Plans</h4>
                         <p class="text-dark-brown">Don't see what you need? We can create a custom plan just for your pet!</p>
                     </div>
-                    
                 </div>
             </div>
         </section>
 
-        <!-- Services & Pricing Detail Section --><section id="pricing" class="py-20 bg-light-cream">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Services & Pricing Detail Section -->
+        <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 py-20">
+            <section id="pricing" class="py-2 bg-light-cream">
                 <h3 class="text-4xl font-bold text-dark-brown text-center mb-16">Detailed Offerings & Pricing</h3>
 
-                <!-- Dog Walking Pricing --><div class="mb-16">
+                <!-- Dog Walking Pricing -->
+                <div class="mb-16">
                     <h4 class="text-3xl font-semibold text-dark-brown mb-6 border-b pb-2">🐕 Dog Walking</h4>
                     <div class="pricing-grid">
-                        <!-- Standard Walk Card --><div class="bg-medium-cream p-6 rounded-xl shadow-lg border border-dark-brown">
+                        <!-- Standard Walk Card -->
+                        <div class="bg-medium-cream p-6 rounded-xl shadow-lg border border-dark-brown">
                             <p class="text-2xl font-bold text-primary-green mb-1">Standard Walk</p>
                             <p class="text-4xl font-extrabold mb-4 text-dark-brown">Inc. in Basic Care Plan</p>
                             <p class="text-sm text-dark-brown mb-4">15 Minutes</p>
@@ -142,7 +224,8 @@
                                 <li class="flex items-start"><i data-lucide="check-circle" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Fresh water upon return</li>
                             </ul>
                         </div>
-                        <!-- Extended Walk Card --><div class="bg-medium-cream p-6 rounded-xl shadow-lg border border-dark-brown">
+                        <!-- Extended Walk Card -->
+                        <div class="bg-medium-cream p-6 rounded-xl shadow-lg border border-dark-brown">
                             <p class="text-2xl font-bold text-accent-orange mb-1">Extended Walk</p>
                             <p class="text-4xl font-extrabold mb-4 text-dark-brown">Inc. in A La Carte Plan</p>
                             <p class="text-sm text-dark-brown mb-4">45 Minutes</p>
@@ -155,16 +238,18 @@
                         </div>
                     </div>
                 </div>
+            
 
-                <!-- In-Home Pet Sitting Pricing --><div>
-                    <h4 class="text-3xl font-semibold text-dark-brown mb-6 border-b pb-2">🏠 In-Home Pet Sitting (Per Overnight Stay)</h4>
-                    <p class="text-sm text-dark-brown mb-6">**Pricing based on a single pet household. An additional cost could be associated for each extra service.**</p>
+                <!-- In-Home Pet Sitting Pricing -->
+                <div>
+                    <h4 class="text-3xl font-semibold text-center text-dark-brown mb-6 border-b pb-2">🏠 In-Home Pet Sitting</h4>
 
                     <div class="pricing-grid">
-                        <!-- Basic Care Plan --><div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-primary-green flex flex-col justify-between">
+                        <!-- Basic Care Plan -->
+                        <div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-primary-green flex flex-col justify-between">
                             <div>
                                 <p class="text-2xl font-bold text-primary-green mb-1">Basic Pet Care Plan</p>
-                                <p class="text-4xl font-extrabold mb-4 text-dark-brown">$100/night*</p>
+                                <p class="text-4xl font-extrabold mb-4 text-dark-brown">$100/day*</p>
                                 <p class="text-base font-medium mb-3 text-dark-brown">Our foundational plan for reliable, dedicated care.</p>
                                 <ul class="space-y-2 text-left text-dark-brown">
                                     <li class="flex items-start"><i data-lucide="star" class="w-5 h-5 text-primary-green mr-2 mt-1"></i>Full Day & Overnight Stay Care</li>
@@ -180,7 +265,8 @@
                             </div>
                         </div>
 
-                        <!-- A La Carte Plan --><div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-dark-brown flex flex-col justify-between">
+                        <!-- A La Carte Plan -->
+                        <div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-dark-brown flex flex-col justify-between">
                             <div>
                                 <p class="text-2xl font-bold text-dark-brown mb-1">A La Carte Pet Care</p>
                                 <p class="text-4xl font-extrabold mb-4 text-dark-brown">Basic Care Plan<br>+ Extras</p>
@@ -198,7 +284,8 @@
                             </div>
                         </div>
 
-                        <!-- Exclusive Plan --><div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-secondary-yellow flex flex-col justify-between">
+                        <!-- Exclusive Plan -->
+                        <div class="bg-light-cream p-6 rounded-xl shadow-lg border-2 border-secondary-yellow flex flex-col justify-between">
                             <div>
                                 <p class="text-2xl font-bold text-secondary-yellow mb-1">Exclusive Pet Program</p>
                                 <p class="text-4xl font-extrabold mb-4 text-dark-brown">Custom Quote</p>
@@ -217,19 +304,72 @@
                             </div>
                         </div>
                     </div>
+                    <p class="text-sm py-8 text-center text-dark-brown mb-6">**Pricing based on a single pet household. An additional cost could be associated for each extra service.**</p>
+                </div>
+            </section>
+
+            <section id="faqs" class="py-8 hh-menu-container rounded-xl mt-20 p-8 shadow-inner">
+                <div class="text-4xl font-bold text-dark-brown text-center mb-16">
+                    <h1>Frequently Asked Billing Questions</h1>
+                    <div class="hh-footer"></div>
                 </div>
 
-                <!-- Custom Packages Callout --><div class="mt-20 p-8 bg-medium-cream rounded-xl text-center shadow-inner">
-                    <h4 class="text-3xl font-bold text-dark-brown mb-4">Need Something Different?</h4>
-                    <p class="text-xl text-dark-brown mb-6">Don't see what you need? We can create a custom plan just for you & your pet! Flexibility is our specialty.</p>
-                    <a href="#contact" class="inline-block border-2 border-primary-green text-primary-green px-8 py-3 rounded-xl font-bold hover:bg-primary-green hover:text-white transition duration-200">
-                        Ready to Discuss
-                    </a>
+                <div class="hh-grid">
+                    <div>
+                        <div class="hh-section-title">Our Commitment</div>
+                        <p><strong>✓ 24/7 Peace of Mind</strong><br>Continuous on-site presence for your pets.</p><br>
+                        <p><strong>✓ Specialized Vet Tech Care</strong><br>Medical knowledge and emergency readiness.</p><br>
+                        <p><strong>✓ Curated Care Program</strong><br>Trusted, reliable, and tailored to your home.</p>
+                    </div>
+
+                    <div>
+                        <div class="hh-section-title">Professional Services</div>
+                                
+                        <div class="hh-item">
+                            <span class="hh-item-label">Standard 24hr Care</span>
+                            <span class="hh-item-price">Included</span>
+                        </div>
+                        <p class="hh-description">In-home overnight stay + program care.</p>
+
+                        <div class="hh-item">
+                            <span class="hh-item-label">Extended Stay (2+ hrs)</span>
+                            <span class="hh-item-price">Not Included</span>
+                        </div>
+
+                        <div class="hh-item">
+                            <span class="hh-item-label">Early Arrivals & Late Departures</span>
+                            <span class="hh-item-price">Not Included</span>
+                        </div>
+                        <p class="hh-description">Arrivals before 9 AM or departures after 6 PM.</p>
+                                
+                        <div class="hh-item">
+                            <span class="hh-item-label">Emergency Proceedure</span>
+                            <span class="hh-item-price">INCLUDED</span>
+                        </div>
+                        <p class="hh-description">Notification of Emergency Needs</p>
+                    </div>
                 </div>
+                <div class="hh-footer">
+                    <strong>Office Hours:</strong> Mon–Fri, 9:00 AM – 6:00 PM<br>
+                    <em>New Inquiries and Bookings</em>
+                </div>
+            </section>
+            <!-- Custom Packages Callout -->
+            <div class="mt-20 p-8 bg-medium-cream rounded-xl text-center shadow-inner">
+                <h4 class="text-3xl font-bold text-dark-brown mb-4">Need Something Different?</h4>
+                <p class="text-xl text-dark-brown mb-6">Don't see what you need? We can create a custom plan just for you & your pet! Flexibility is our specialty.</p>
+                <a href="#contact" class="inline-block border-2 border-primary-green text-primary-green px-8 py-3 rounded-xl font-bold hover:bg-primary-green hover:text-white transition duration-200">
+                    Ready to Discuss
+                </a>
             </div>
-        </section>
+        </div>
+    </div>
 
-        <!-- Contact Section --><section id="contact" class="py-20 bg-primary-green">
+                
+                
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-primary-green">
             <div class="max-w-xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
                 <h3 class="text-4xl font-bold mb-4">Let's Talk About Your Pet!</h3>
                 <p class="text-xl mb-8 opacity-90">Ready to book stress-free, loving care? <br>Contact us to schedule your free consultation.</p>
@@ -253,14 +393,14 @@
 
                                         <div>
                                             <label class="block text-sm font-bold mb-2">Dallas Neighborhood</label>
-                                            <input type="text" name="hood" id="hood" placeholder="Oak Lawn" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
+                                            <input type="text" name="hood" id="hood" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green"placeholder="Oak Lawn">
                                         </div>
                                     </div>
                                     
                                     <div class="mb-6">
                                         <label class="block text-sm font-bold mb-2">Service Type</label>
                                         <select name="service" id="service" class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green">
-                                            <option>Basic Pet Program ($100/night)</option>
+                                            <option>Basic Pet Program ($100/day)</option>
                                             <option>A La Carte Pet Program</option>
                                             <option>Exclusive Pet Program</option>
                                             <option>Service Inquiry</option>
@@ -269,7 +409,7 @@
 
                                     <div class="mb-8">
                                         <label class="block text-sm font-bold mb-2">Your Message</label>
-                                        <textarea name="message" id="message" rows="4" placeholder="Greetings, my name is Molly Harvell and I have 2 male dogs. Groot is working Lab max & Cash is a pug named after Johnny Cash!" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green" placeholder="Tell us about your pets and dates needed..."></textarea>
+                                        <textarea name="message" id="message" rows="4" required class="w-full p-3 bg-gray-50 border border-gray-200 rounded-lg outline-none focus:border-primary-green" placeholder="Tell us about your pets and dates needed..."></textarea>
                                     </div>
                                     
                                     <button type="submit" id="submitBtn" class="w-full bg-[#C96639] text-white font-bold py-4 rounded-xl shadow-lg hover:brightness-110 transition flex justify-center items-center gap-3">
@@ -283,7 +423,7 @@
         </section>
     </main>
 
-    <!-- Footer --><footer class="bg-dark-brown text-white py-8">
+    <!-- Footer --><footer class="bg-dark-brown text-white py-1">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm opacity-80">
             <p>&copy; 2025 Harvell's Haven. All rights reserved.</p>
             <p class="mt-1">Premium Pet Sitting Services. Dedicated care with a Peronal Touch.</p>
